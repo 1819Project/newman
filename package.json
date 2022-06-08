@@ -1,6 +1,6 @@
 {
   "name": "@1819project/newman",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Command-line companion utility for Postman",
   "homepage": "https://github.com/1819Project/newman",
   "bugs": "https://github.com/1819Project/newman/issues",
