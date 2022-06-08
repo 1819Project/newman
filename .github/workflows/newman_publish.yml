@@ -41,7 +41,7 @@ jobs:
           fi
           npm publish --dry-run
       - name: Publish to GitHub Package Registry
-        if: ${{ github.event_name == 'push' && (github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master') }}
+        if: ${{ github.event_name == 'push' && (github.ref == 'refs/heads/develop' || github.ref == 'refs/heads/develop') }}
         run: |
           if [ -f ".npmrc" ]; then
             rm .npmrc
