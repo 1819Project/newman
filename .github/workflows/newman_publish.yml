@@ -32,7 +32,7 @@ jobs:
             fi;
           done
       - name: Dry-run publish to GitHub Package Registry
-        if: ${{ ! (github.event_name == 'push' && (github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master')) }}
+        if: ${{ ! (github.event_name == 'push' && (github.ref == 'refs/heads/main' || github.ref == 'refs/heads/develop')) }}
         # We remove the .npmrc so that the repo file isn't used for publish
         # And we instead used the one created in `actions/setup-node` which refs NODE_AUTH_TOKEN
         run: |
